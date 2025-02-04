@@ -1,0 +1,6 @@
+# Setting folder
+build
+.vscode
+
+# log files
+log.txt
