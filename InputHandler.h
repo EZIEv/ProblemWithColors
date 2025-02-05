@@ -18,7 +18,7 @@ B C*/
 class InputHandler {
 public:
     // Читаем входные данные из файла
-    static Graph readFromFile(const std::string& filename) {
+    static inline Graph readFromFile(const std::string& filename) {
         Graph graph;
 
         std::ifstream file(filename);
@@ -49,7 +49,7 @@ public:
     }
 
     // Читаем входные данные из консоли
-    static Graph readFromConsole() {
+    static inline Graph readFromConsole() {
         Graph graph;
 
         // Читаем все регионы

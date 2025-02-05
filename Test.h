@@ -10,7 +10,7 @@
 
 class Test {
 public:
-    static void Test1() {
+    static inline void Test1() {
         Graph graph;
 
         ColoringAlgorithm solver(graph);
@@ -20,7 +20,7 @@ public:
         std::cerr << "TEST1 -> OK" << std::endl;
     }
 
-    static void Test2() {
+    static inline void Test2() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C", "D", "E"};
         for (const std::string& region : regions) {
@@ -40,7 +40,7 @@ public:
         std::cerr << "TEST2 -> OK" << std::endl;
     }
 
-    static void Test3() {
+    static inline void Test3() {
         Graph graph;
         std::vector<std::string> regions = {"A"};
         for (const std::string& region : regions) {
@@ -55,7 +55,7 @@ public:
         std::cerr << "TEST3 -> OK" << std::endl;
     }
 
-    static void Test4() {
+    static inline void Test4() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C"};
         for (const std::string& region : regions) {
@@ -70,7 +70,7 @@ public:
         std::cerr << "TEST4 -> OK" << std::endl;
     }
 
-    static void Test5() {
+    static inline void Test5() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C"};
         for (const std::string& region : regions) {
@@ -87,7 +87,7 @@ public:
         std::cerr << "TEST5 -> OK" << std::endl;
     }
 
-    static void Test6() {
+    static inline void Test6() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C"};
         for (const std::string& region : regions) {
@@ -103,7 +103,7 @@ public:
         std::cerr << "TEST6 -> OK" << std::endl;
     }
 
-    static void Test7() {
+    static inline void Test7() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C", "D"};
         for (const std::string& region : regions) {
@@ -121,7 +121,7 @@ public:
         std::cerr << "TEST7 -> OK" << std::endl;
     }
 
-    static void Test8() {
+    static inline void Test8() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C"};
         for (const std::string& region : regions) {
@@ -138,7 +138,7 @@ public:
         std::cerr << "TEST8 -> OK" << std::endl;
     }
 
-    static void Test9() {
+    static inline void Test9() {
         Graph graph;
         std::vector<std::string> regions = {"A", "B", "C"};
         for (const std::string& region : regions) {

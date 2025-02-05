@@ -11,7 +11,7 @@
 class OutputHandler {
 public:
     // Вывод раскрашенных регионов и количество использованных цветов в консоль
-    static void printToConsole(const std::unordered_map<std::string, int>& colorAssignment, int colors) {
+    static inline void printToConsole(const std::unordered_map<std::string, int>& colorAssignment, int colors) {
         for (const auto& [region, color] : colorAssignment) {
             std::cout << "Region " << region << ": Color " << color << "\n"; 
         }
@@ -20,7 +20,7 @@ public:
     }
 
     // Вывод раскрашенных регионов и количество использованных цветов в файл
-    static void writeToFile(const std::string& filename, const std::unordered_map<std::string, int>& colorAssignment, int colors) {
+    static inline void writeToFile(const std::string& filename, const std::unordered_map<std::string, int>& colorAssignment, int colors) {
         std::ofstream file(filename, std::ios::app);
         for (const auto& [region, color] : colorAssignment) {
             file << "Region " << region << ": Color " << color << "\n"; 
